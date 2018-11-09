@@ -1,0 +1,19 @@
+
+/* staff page */
+ 
+@media (max-width:767px) {
+    #staff {
+        .pd-col{
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+        .pd-col:nth-child(even) {
+            padding-top: 0px !important;
+            margin-bottom: 40px !important;
+        }
+        .person-about{
+            padding-top: 20px;
+            transform: translateY(-22px);
+        }
+    }
+}

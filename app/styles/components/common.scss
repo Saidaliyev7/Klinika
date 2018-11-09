@@ -1,0 +1,39 @@
+@import './elements/_buttons.scss';
+@import './elements/_selectbox.scss';
+@import './elements/_inputs.scss';
+@import './elements/_accordion.scss';
+//Section heading
+.section-header {
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 55px;
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.page-header {
+  background-color: #F1F6FA;
+  padding: 42px 0;
+  .header-icon {
+    margin-right: 53px;
+  }
+  .header-title {
+    font-size: 34px;
+    color: #002C3D;
+    font-weight: bold;
+  }
+  .header-breadcumb{
+      ul{
+          font-weight: 500;
+          color: #BBBBBB;
+          li{
+              display: inline-block;
+              a{
+
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../variables/_colors.scss';
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.button-style {
+  display: inline-block;
+  padding: 18px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  transition: .3s ease;
+  position: relative;
+  &.orange {
+    color: white;
+    background-image: $gradient_orange;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(270deg, #e06c04 0%, #c5630d 100%);
+      opacity: 0;
+      transition: .3s ease;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  &.blue {
+    color: white;
+    background-image: $gradient_blue-white;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #006999 0%, #058bb1 100%);
+      opacity: 0;
+      transition: .3s ease;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  &.lined {
+    position: relative;
+    &:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      height: 2px;
+      width: 36px;
+      background-color: white;
+      vertical-align: super;
+      margin-left: 7.5px;
+      z-index: 2;
+    }
+  }
+  >span {
+    position: relative;
+    z-index: 2;
+  }
+}
+

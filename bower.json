@@ -1,0 +1,16 @@
+{
+  "name": "merkezi-klinika",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "reset-css": "^3.0.0",
+    "owl.carousel": "^2.3.4",
+    "flexboxgrid": "^6.3.2",
+    "fancybox": "^3.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}

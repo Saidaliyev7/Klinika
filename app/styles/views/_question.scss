@@ -1,0 +1,23 @@
+ #question {
+    .news-accordion {
+        .accordion-top{
+            > ul {
+                justify-content: center;
+            }
+        }
+        .accordion-bottom {
+            .news-content {
+                cursor: pointer;
+                .question-content{
+                    margin-top: 15px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    display: none;
+                }
+                &::after {
+                    height: 55%;
+                }
+            }
+        }
+    }
+ }  

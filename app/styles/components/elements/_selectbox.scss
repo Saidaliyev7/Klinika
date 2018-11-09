@@ -1,0 +1,98 @@
+.selectbox {
+  .selectbox-holder {
+    position: relative;
+    .selectbox-value {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      border: 1px solid #D5D5D5;
+      padding: 14px 15px;
+      padding-right: 37px;
+      font-size: 14px;
+      color: #9A9A9A;
+      user-select: none;
+      cursor: pointer;
+      &:after {
+        content: "\f107";
+        font-family: 'Font Awesome 5 Free';
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-weight: 900;
+        font-size: 25px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        transition: .2s ease;
+      }
+      &.active {
+        color: #19769F;
+        &:after {
+          transform: translate3d(0, -50%, 0) rotate(-180deg);
+        }
+      }
+      &.activeSelected {
+        color: #19769F;
+      }
+    }
+    .selectbox-list {
+      display: none;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 22px 25px;
+      box-sizing: border-box;
+      background-color: white;
+      z-index: 3;
+      max-height: 300px;
+      overflow-y: auto;
+      user-select: none;
+      ul {
+        line-height: 17px;
+        color: #C2C2C2;
+        li {
+          position: relative;
+          margin: 3px 0;
+          transition: 0.3s ease;
+          span {
+            position: relative;
+            display: block;
+            padding: 8px 0;
+            cursor: pointer;
+            &:after {
+              content: '';
+              position: absolute;
+              height: 3px;
+              width: 35px;
+              background-color: #19769F;
+              top: 90%;
+              left: 0;
+              opacity: 0;
+              transition: .2s ease;
+            }
+            &.selected {
+              font-weight: bold;
+              color: #19769F;
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+          &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+          }
+          &:hover {
+            transform: scale(1.05)
+          }
+        }
+      }
+    }
+  }
+}

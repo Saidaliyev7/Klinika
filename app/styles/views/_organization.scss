@@ -1,0 +1,27 @@
+
+/* organizations page */
+
+#organizations {
+    .header-container {
+        padding-top: 40px;
+    }
+    .organizations-list{
+        margin-top: 50px;
+        margin-bottom: 75px;
+        .col-20-percent{
+            text-align: center;
+            padding: 25px 0px;
+            .organization-image{
+                padding: 0px 20px;
+                display: inline-block;
+                >img{
+                    width: 100%;
+                }
+            }
+            .organization-name{
+                font-size: 12px;
+                padding: 0px 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.input-style {
+  box-shadow: 0 3px 6px rgba(95, 229, 188, 0.11);
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  color: #cfcfcf;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 18px;
+  &.border-orange {
+    border-color: #fb7701;
+  }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #CFCFCF;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #CFCFCF;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #CFCFCF;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #CFCFCF;
+  }
+}
+
+
+
+/* cv page inputs */
+
+.cv-input{
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    padding: 14px 15px;
+    padding-right: 37px;
+    font-size: 14px;
+    color: #9A9A9A;
+    transition: 0.3s ease;
+    box-sizing : border-box;
+}
+
+.cv-file-input{
+  width: 85%;
+  height: 45px;
+  background-color: #68ADE6;
+  color: white;
+}
+.cv-file-input-none{
+  display: none;
+}

@@ -1,0 +1,53 @@
+
+/* organizatons page */
+
+@media(max-width:450px){
+    #organizations{
+        .col-20-percent {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+    }
+    
+}
+@media(min-width:450px) and(max-width:600px){
+    #organizations{
+        .col-20-percent {
+            -ms-flex-preferred-size: 32%;
+            flex-basis: 32%;
+            max-width: 32%;
+        }
+    }
+    
+}
+@media(min-width:600px) and(max-width:991px){
+    #organizations{
+        .col-20-percent {
+            -ms-flex-preferred-size: 24%;
+            flex-basis: 24%;
+            max-width: 24%;
+        }
+    }
+    
+}
+
+@media(min-width:991px) {
+    #organizations{
+        .organization-image {
+            transition: 0.3s ease;
+            &:hover {
+             transform: scale(1.1)
+            }
+        }
+        .organization-name{
+            transition: 0.3s ease;
+            
+        }
+        .organization-active {
+            margin-top: 10px;
+        }
+    }
+    
+}
+
