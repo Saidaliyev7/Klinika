@@ -7,7 +7,8 @@
     "reset-css": "^3.0.0",
     "owl.carousel": "^2.3.4",
     "flexboxgrid": "^6.3.2",
-    "fancybox": "^3.5.2"
+    "fancybox": "^3.5.2",
+    "jquery-validation":"^1.13.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

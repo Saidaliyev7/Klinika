@@ -15,9 +15,33 @@
                     display: none;
                 }
                 &::after {
-                    height: 55%;
+                    height: 74%;
                 }
             }
         }
     }
- }  
+ } 
+ 
+ @media(max-width:768px){
+    #question {
+        .news-content {
+            padding-left: 60px !important;
+            .content-name{
+                font-size: 15px !important;
+            }
+        }
+    }
+ }
+ @media(max-width:450px){
+    #question {
+        .news-content {
+            padding-left: 60px !important;
+            .content-name{
+                font-size: 13px !important;
+                padding-right: 15px;
+            }
+        }
+    }
+ }
+
+

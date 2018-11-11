@@ -104,16 +104,28 @@ $(document).ready(function () {
     }
   })
 
-  $(".history-carousel").owlCarousel({
+  $('.history-carousel').owlCarousel({
     items: 1,
     loop:true,
   })
   //selectbox 
   $('.selectbox .selectbox-value').click(function () {
     var listContainer = $(this).siblings('.selectbox-list');
-    listContainer.toggle();
-    listContainer.toggleClass('active');
-    $(this).toggleClass('active');
+ 
+    if($(this).hasClass('active')){
+      listContainer.hide();
+      listContainer.removeClass('active');
+      $(this).removeClass('active');
+    }else {
+      $('.selectbox .selectbox-value').removeClass('active');
+      $('.selectbox .selectbox-value').siblings('.selectbox-list').removeClass('active');
+      $('.selectbox .selectbox-value').siblings('.selectbox-list').hide()
+      listContainer.show();
+      listContainer.addClass('active');
+      $(this).addClass('active');
+     
+    }
+    
     //$(this).toggleClass('activeSelected');
     
   })
@@ -126,8 +138,15 @@ $(document).ready(function () {
     $(this).addClass('selected');
     valueInput.val($(this).attr('data-value'));
     valueHolder.removeClass('active');
+
+   if(valueHolder.find('.value').text().includes('Digər')) {
+     $('.another-type-active').fadeIn();
+   }else {
+    $('.another-type-active').fadeOut();
+   }
     valueHolder.addClass('activeSelected');
     listContainer.hide();
+    // 
   })
 
   //news accordion 
@@ -251,12 +270,12 @@ $('.exit-element').click(function(e){
 
 
 //question accordion 
-$("#question .news-content").click(function(){
-  $("#question .news-content").find(".question-content").slideUp();
-  if ($(this).find(".question-content").css('display') == 'none') {
-    $(this).find(".question-content").slideDown();
+$('#question .news-content').click(function(){
+  $('#question .news-content').find('.question-content').slideUp();
+  if ($(this).find('.question-content').css('display') == 'none') {
+    $(this).find('.question-content').slideDown();
   }else {
-    $(this).find(".question-content").slideUp();
+    $(this).find('.question-content').slideUp();
   }
  
 
@@ -264,7 +283,7 @@ $("#question .news-content").click(function(){
 
 //form validation 
 
-$("#form-element-anket").validate({
+$('#form-element-anket').validate({
   rules:{
     name:{
       required: true
@@ -291,5 +310,17 @@ $("#form-element-anket").validate({
  },
 })
 
-
+//language
+if($(window).width()>1100){
+$('.languages').hover(function(){
+  $(this).find('.languages-list').slideToggle();  
+}) 
+}else {
+  $('.languages').click(function(){
+    $(this).find('.languages-list').slideToggle();  
+  }) 
+}
+$('.languages .languages-list li').click(function(){
+ console.log($(this).find('a').text()); 
+});
 })

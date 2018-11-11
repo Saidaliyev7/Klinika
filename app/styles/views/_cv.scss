@@ -9,6 +9,9 @@
             margin: 25px 0px;
             display: flex;
             justify-content: space-between;
+            .cv-input {
+                margin: 0px 5px;
+            }
             .selectbox{
                 margin: 0px 5px;
                 width: 100%;
@@ -54,6 +57,7 @@
                 display:flex;
                 justify-content: space-between;
                 padding-bottom: 10px;
+                margin: 0px 5px;
                 .about-text {
                     font-size :14px;
                     color: #9A9A9A;

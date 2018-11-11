@@ -1,0 +1,11 @@
+@media(max-width:450px){
+     #cv {
+         .input-group-datepicker{
+             flex-direction: column;
+             .selectbox {
+                 margin: 10px 5px !important;
+             }
+         }
+     }
+
+}
