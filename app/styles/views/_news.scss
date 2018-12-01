@@ -1,6 +1,8 @@
 /* news section */
 
-#news,#question,#article {
+#news,
+#question,
+#article {
   .news-accordion {
     margin-top: 50px;
     margin-bottom: 75px;
@@ -51,15 +53,25 @@
     .accordion-bottom {
       padding: 15px;
       position: relative;
-        .accordion-ul{
-            position: absolute;
-            opacity: 0;
-            transition: 0.3s cubic-bezier(0.48, 0.87, 1, 1);
-        }
-        .accordion-ul-active{
-            position:initial;
-            opacity: 1;
-        }
+
+      .accordion-ul {
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s cubic-bezier(0.48, 0.87, 1, 1);
+      }
+
+      .accordion-ul-active {
+        position: initial;
+        opacity: 1;
+      }
+      .news-content img {
+        width: 90% !important;
+        height: auto !important;
+    }
+    
+    .news-content{
+        padding-right: 20px !important;
+    }
       .news-content {
         margin: 8px 0px;
         padding: 25px 0px;
@@ -81,11 +93,11 @@
           margin-top: 13px;
           font-family: 'Montserrat', bold;
         }
-        
+
         &:hover {
-            background-color: #E1E6E9;
-            transform: scaleX(1.015);
-            box-shadow: 2px 2px 3px 1px #b7b5b5;
+          background-color: #E1E6E9;
+          transform: scaleX(1.015);
+          box-shadow: 2px 2px 3px 1px #b7b5b5;
           -webkit-box-shadow: 2px 2px 3px 1px rgba(181, 181, 181, 1);
           -moz-box-shadow: 2px 2px 3px 1px rgba(181, 181, 181, 1);
         }
@@ -98,6 +110,57 @@
           background-color: #68ADE6;
           top: 22px;
           left: 40px;
+        }
+      }
+
+      .pagination-dots-news {
+        >ul {
+          display: flex;
+          justify-content: center;
+
+          >li {
+            padding: 0px 3px;
+
+            .dot-number {
+              width: 30px;
+              height: 30px;
+              display: inline-block;
+              text-align: center;
+              padding: 10px 0;
+              box-sizing: border-box;
+              color: white;
+              border: 1px solid #10c0f1;
+              background-color: #10c0f1;
+              border-radius: 50%;
+              font-weight: 300;
+              transition: 0.3s ease;
+              cursor: pointer;
+              font-size: 12px;
+
+              &:hover {
+
+                background-color: white;
+                color: #10c0f1;
+              }
+            }
+            .dot-number.active {
+              background-color: white;
+              color: #10c0f1;
+            }
+            .dot-number.not-number {
+              color: #10c0f1;
+              background-color: transparent;
+              border: transparent;
+              transition: none;
+              font-size: 30px;
+              line-height: 0px;
+              width: 10px;
+              &:hover {
+                background-color: transparent;
+              }
+            }
+          }
+
         }
       }
     }

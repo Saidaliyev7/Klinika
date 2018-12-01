@@ -22,6 +22,16 @@
                 align-self:center;
             }
         }
+        .aligned-input >label {
+            flex-basis: 35%;
+        }
+        .aligned-text-area{
+            flex-direction: column;
+            >label{
+                align-self:initial;
+                margin: 10px 5px;
+            }
+        }
         .mobile-numbers {
             .selectbox {
                 width: 15%;
@@ -74,6 +84,26 @@
                         background-color: #68ADE6;
                         text-align: center;
                     }
+                }
+            }
+            .education-content {
+                .row {
+                    position: relative;
+                    .about-icon {
+                        position: absolute;
+                        top: -30px;
+                        right: 14px;
+                        >i{
+                            cursor: pointer;
+                            font-size: 21px;
+                            color: #FFFFFF;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            background-color: #68ADE6;
+                            text-align: center;
+                        }
+                    } 
                 }
             }
             &::after {

@@ -41,6 +41,7 @@
             z-index: 2;
 
             .item-title {
+              width: 500px;
               font-size: 56px;
               line-height: 65px;
               margin-top: 110px;
@@ -485,7 +486,7 @@ touch-action: pan-x;
   .slider-item {
     display: flex;
   }
-
+ 
   .news-all {
     width: 55vw;
     background-image: linear-gradient(53deg, #01a9d8 0%, #016798 100%);
@@ -563,7 +564,7 @@ touch-action: pan-x;
         padding: 30px 40px;
         padding-bottom: 70px;
         background-color: white;
-
+         height: 160px;
         .category {
           font-weight: bold;
           color: #7b7b7b;

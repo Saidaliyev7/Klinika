@@ -75,6 +75,15 @@
         box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
         display: none;
         margin:0px auto;
+        .dropdown-sub-content {
+            position: relative;
+            text-align: center;
+            z-index: 6;
+            background-color: white;
+            box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+            display: none;
+            margin:0px auto;
+          }
         ul {
           li {
             margin-right: 0px;
@@ -83,5 +92,6 @@
           }
         }
       }
+      
     }
   }

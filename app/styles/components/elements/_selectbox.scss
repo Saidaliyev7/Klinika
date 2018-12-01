@@ -94,5 +94,8 @@
         }
       }
     }
+    .selectbox-list::-webkit-scrollbar{
+      display: none;
+    }
   }
 }

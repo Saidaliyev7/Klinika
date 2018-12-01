@@ -103,7 +103,7 @@
           //top: 50%;
     transform: translateY(40%); /* or try 50% */
           >span{
-            color: white;
+            color: black;
             font-size: 24px;
             margin-bottom: 5px;
             font-weight: 600;
@@ -114,6 +114,7 @@
            opacity: 1;
            padding: 8px 18px !important;
            box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+           color: black;
          }
         }
         .exit-element{
@@ -126,13 +127,13 @@
          width: 35px;
          height: 35px;
          line-height: 35px;
-         color: white;
+         color: black;
          font-weight: bold;
          cursor: pointer;
         }
         &:after {
           content: "";
-          background-color: black;
+          background-color: white;
           width: 100%;
           height: 100%;
           position: absolute;
@@ -163,6 +164,7 @@
     padding: 10px 15px;
     left: -2px;
     font-size: 12px;
+    z-index: 555;
     text-transform: uppercase;
     display: none;
       >ul{
@@ -200,7 +202,10 @@
         @media (min-width:1100px) {
           .dropdown {
             position: relative;
-
+            padding: 26px 0px;
+             a {
+               cursor: pointer;
+             }
             .dropdown-content {
               position: absolute;
               width: 180px;
@@ -208,7 +213,8 @@
               z-index: 6;
               background-color: white;
               box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
-              left: -25px;
+              left: -36px;
+              top: 60px;
               display: none;
 
               ul {
@@ -216,6 +222,20 @@
                   margin-right: 0px;
                   padding: 10px 20px;
                   display: block;
+                  position: relative;
+                  cursor: pointer;
+                  .dropdown-sub-content {
+                    position: absolute;
+                    width: 180px;
+                    text-align: center;
+                    z-index: 6;
+                    background-color: white;
+                    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+                    display: none;
+                    /* top: 0px; */
+                    right: -155px;
+                    top: -5px;
+                  }
                 }
               }
             }
